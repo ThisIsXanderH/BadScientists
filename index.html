@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery UI and jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="css/jquery.css">
+
+<!-- Include JQM Button Number Input -->
+<link rel="stylesheet" href="css/number-input.css">
+
+<!-- Genres stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Include the jQuery library, jQuery UI, and jQuery Mobile -->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- Include Phonegap API -->
+<script type="text/javascript" src="phonegap.js"></script>
+
+<title>Bad Scientists</title>
+</head>
+
+<body>
+<div id="pageTitle" class="page" data-role="page">
+	<h1 class="title">Bad Scientists</h1>
+    
+	<button class="navButton" data-link="pageSetupPlayerCount">Start</button>
+</div>
+<div id="pageSetupPlayerCount" class="page" data-role="page">
+	<h1>How many players?</h1>
+    <div class="content">
+        <div id="numPlayers" class="numberInput" data-min="5" data-max="10" data-init="5"></div>
+        <p>
+            <span class="numGood">3</span> Good Scientists
+            <img width="50px" height="50px" src="images/good.png"/>
+		</p>
+        <p>
+            <img width="50px" height="50px" src="images/bad.png"/>
+            <span class="numBad">2</span> Bad Scientists<br>
+		</p>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Include JQM Button Number Input -->
+<script type="text/javascript" src="js/number-input.js"></script>
+</html>
